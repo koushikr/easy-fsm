@@ -1,14 +1,43 @@
 apply plugin: 'maven'
+apply plugin: 'java'
+apply plugin: 'idea'
+apply plugin: 'application'
+    
+repositories {
+    mavenCentral()
+}
+
+configurations {
+   provided
+   testCompile.extendsFrom provided
+   compile.transitive = true
+}
 
 description = 'Easy FSM Source Repository'
 
 dependencies {
-    compile 'com.fasterxml.jackson.core:jackson-annotations:2.6.3',
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.7.4',
             'javax.validation:validation-api:1.1.0.Final',
-            'org.slf4j:slf4j-api:1.7.12',
+            'org.slf4j:slf4j-api:1.7.21',
             'com.google.guava:guava:18.0',
-            'org.projectlombok:lombok:1.16.4'
-   testCompile 'org.testng:testng:6.1.1'
+            'org.projectlombok:lombok:1.16.6'
+
+   testCompile 'org.testng:testng:6.9.10'
+}
+
+version = '0.0.1-SNAPSHOT'
+group = 'com.grookage.fsm'
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+test {
+   testLogging {
+            exceptionFormat = 'full'
+   }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '2.5'
 }
 
 mainClassName = ''
