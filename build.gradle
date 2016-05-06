@@ -2,7 +2,13 @@ apply plugin: 'maven'
 apply plugin: 'java'
 apply plugin: 'idea'
 apply plugin: 'application'
-    
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
 repositories {
     mavenCentral()
 }
@@ -48,3 +54,4 @@ jar {
     }
     exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
 }
+
