@@ -1,0 +1,21 @@
+apply plugin: 'maven'
+
+description = 'Easy FSM Source Repository'
+
+dependencies {
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.6.3',
+            'javax.validation:validation-api:1.1.0.Final',
+            'org.slf4j:slf4j-api:1.7.12',
+            'com.google.guava:guava:18.0',
+            'org.projectlombok:lombok:1.16.4'
+   testCompile 'org.testng:testng:6.1.1'
+}
+
+mainClassName = ''
+
+jar {
+    doFirst {
+        from { configurations.compile.collect { it.isDirectory() ? it : zipTree(it) } }
+    }
+    exclude 'META-INF/*.RSA', 'META-INF/*.SF','META-INF/*.DSA'
+}
