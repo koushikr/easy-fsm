@@ -4,7 +4,7 @@ import com.grookage.fsm.core.entities.Context;
 import com.grookage.fsm.core.executors.EventAction;
 import com.grookage.fsm.exceptions.InvalidStateException;
 import com.grookage.fsm.exceptions.StateNotFoundException;
-import junit.framework.Assert;
+import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 /**
@@ -55,7 +55,7 @@ public class StateMachineTest {
         stateMachine.anyTransition(new EventAction<Context>() {
             @Override
             public void call(Context context) throws Exception {
-                Assert.assertTrue(context.getFrom() == StateMachineUtility.TestState.STARTED);
+                org.testng.Assert.assertTrue(context.getFrom() == StateMachineUtility.TestState.STARTED);
             }
         });
         stateMachine.fire(StateMachineUtility.TestEvent.FULFILL, stateContext);
