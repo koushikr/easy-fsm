@@ -31,7 +31,7 @@ dependencies {
    testCompile 'org.testng:testng:6.9.10'
 }
 
-version = '0.0.1-SNAPSHOT'
+version = '0.0.1'
 group = 'com.github.koushikr.fsm'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
