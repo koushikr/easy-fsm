@@ -1,7 +1,7 @@
-package com.github.koushikr.services.impl;
+package com.github.koushikr.fsm.services.impl;
 
-import com.github.koushikr.models.entities.State;
-import com.github.koushikr.services.StateManagementService;
+import com.github.koushikr.fsm.models.entities.State;
+import com.github.koushikr.fsm.services.StateManagementService;
 import com.google.common.collect.Sets;
 
 import java.util.Collection;

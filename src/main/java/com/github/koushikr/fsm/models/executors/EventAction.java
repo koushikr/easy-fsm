@@ -1,6 +1,6 @@
-package com.github.koushikr.models.executors;
+package com.github.koushikr.fsm.models.executors;
 
-import com.github.koushikr.models.entities.Context;
+import com.github.koushikr.fsm.models.entities.Context;
 
 /**
  * Entity by : koushikr.

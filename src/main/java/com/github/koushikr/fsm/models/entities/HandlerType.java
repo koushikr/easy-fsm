@@ -1,6 +1,6 @@
-package com.github.koushikr.models.entities;
+package com.github.koushikr.fsm.models.entities;
 
-import com.github.koushikr.models.executors.EventAction;
+import com.github.koushikr.fsm.models.executors.EventAction;
 
 /**
  * Entity by : koushikr.

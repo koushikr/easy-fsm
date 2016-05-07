@@ -1,9 +1,9 @@
-package com.github.koushikr.services.impl;
+package com.github.koushikr.fsm.services.impl;
 
-import com.github.koushikr.models.entities.Event;
-import com.github.koushikr.models.entities.State;
-import com.github.koushikr.models.entities.Transition;
-import com.github.koushikr.services.TransitionService;
+import com.github.koushikr.fsm.models.entities.Event;
+import com.github.koushikr.fsm.models.entities.State;
+import com.github.koushikr.fsm.models.entities.Transition;
+import com.github.koushikr.fsm.services.TransitionService;
 import com.google.common.collect.HashMultimap;
 import com.google.common.collect.Multimap;
 import lombok.AllArgsConstructor;

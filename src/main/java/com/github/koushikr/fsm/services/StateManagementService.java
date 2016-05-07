@@ -1,6 +1,6 @@
-package com.github.koushikr.services;
+package com.github.koushikr.fsm.services;
 
-import com.github.koushikr.models.entities.State;
+import com.github.koushikr.fsm.models.entities.State;
 
 import java.util.Collection;
 import java.util.Set;

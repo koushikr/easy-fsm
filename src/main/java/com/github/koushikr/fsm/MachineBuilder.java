@@ -1,15 +1,15 @@
-package com.github.koushikr.corefsm;
+package com.github.koushikr.fsm;
 
-import com.github.koushikr.models.entities.State;
-import com.github.koushikr.models.entities.Transition;
-import com.github.koushikr.services.ActionService;
-import com.github.koushikr.services.StateManagementService;
-import com.github.koushikr.services.impl.ActionServiceImpl;
-import com.github.koushikr.models.entities.Context;
-import com.github.koushikr.models.entities.Event;
-import com.github.koushikr.services.TransitionService;
-import com.github.koushikr.services.impl.StateManagementServiceImpl;
-import com.github.koushikr.services.impl.TransitionServiceImpl;
+import com.github.koushikr.fsm.models.entities.State;
+import com.github.koushikr.fsm.models.entities.Transition;
+import com.github.koushikr.fsm.services.ActionService;
+import com.github.koushikr.fsm.services.StateManagementService;
+import com.github.koushikr.fsm.services.impl.ActionServiceImpl;
+import com.github.koushikr.fsm.models.entities.Context;
+import com.github.koushikr.fsm.models.entities.Event;
+import com.github.koushikr.fsm.services.TransitionService;
+import com.github.koushikr.fsm.services.impl.StateManagementServiceImpl;
+import com.github.koushikr.fsm.services.impl.TransitionServiceImpl;
 
 import java.util.Collection;
 

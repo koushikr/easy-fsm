@@ -1,10 +1,10 @@
 package com.github.koushikr;
 
-import com.github.koushikr.models.entities.State;
-import com.github.koushikr.models.entities.Context;
-import com.github.koushikr.models.entities.Event;
-import com.github.koushikr.corefsm.MachineBuilder;
-import com.github.koushikr.corefsm.StateMachine;
+import com.github.koushikr.fsm.models.entities.State;
+import com.github.koushikr.fsm.models.entities.Context;
+import com.github.koushikr.fsm.models.entities.Event;
+import com.github.koushikr.fsm.MachineBuilder;
+import com.github.koushikr.fsm.StateMachine;
 import com.google.common.collect.Sets;
 
 /**

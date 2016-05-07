@@ -1,11 +1,11 @@
-package com.github.koushikr.services.impl;
+package com.github.koushikr.fsm.services.impl;
 
-import com.github.koushikr.models.entities.*;
-import com.github.koushikr.models.executors.EventAction;
-import com.github.koushikr.exceptions.RunningtimeException;
-import com.github.koushikr.services.ActionService;
-import com.github.koushikr.models.executors.Action;
-import com.github.koushikr.models.executors.ErrorAction;
+import com.github.koushikr.fsm.models.entities.*;
+import com.github.koushikr.fsm.models.executors.EventAction;
+import com.github.koushikr.fsm.exceptions.RunningtimeException;
+import com.github.koushikr.fsm.services.ActionService;
+import com.github.koushikr.fsm.models.executors.Action;
+import com.github.koushikr.fsm.models.executors.ErrorAction;
 
 import java.util.HashMap;
 import java.util.Map;

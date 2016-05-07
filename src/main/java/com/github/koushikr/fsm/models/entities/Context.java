@@ -1,4 +1,4 @@
-package com.github.koushikr.models.entities;
+package com.github.koushikr.fsm.models.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

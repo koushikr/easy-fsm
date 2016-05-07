@@ -32,7 +32,7 @@ dependencies {
 }
 
 version = '0.0.1-SNAPSHOT'
-group = 'com.github.koushikr'
+group = 'com.github.koushikr.fsm'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 

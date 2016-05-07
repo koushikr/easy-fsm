@@ -1,8 +1,8 @@
-package com.github.koushikr.exceptions;
+package com.github.koushikr.fsm.exceptions;
 
-import com.github.koushikr.models.entities.State;
-import com.github.koushikr.models.entities.Context;
-import com.github.koushikr.models.entities.Event;
+import com.github.koushikr.fsm.models.entities.State;
+import com.github.koushikr.fsm.models.entities.Context;
+import com.github.koushikr.fsm.models.entities.Event;
 import lombok.Getter;
 
 /**

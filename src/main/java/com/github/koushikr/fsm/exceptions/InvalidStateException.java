@@ -1,4 +1,4 @@
-package com.github.koushikr.exceptions;
+package com.github.koushikr.fsm.exceptions;
 
 /**
  * Entity by : koushikr.

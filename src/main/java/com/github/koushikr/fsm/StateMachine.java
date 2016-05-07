@@ -1,14 +1,14 @@
-package com.github.koushikr.corefsm;
+package com.github.koushikr.fsm;
 
-import com.github.koushikr.models.entities.*;
-import com.github.koushikr.models.executors.ErrorAction;
-import com.github.koushikr.models.executors.EventAction;
-import com.github.koushikr.exceptions.InvalidStateException;
-import com.github.koushikr.exceptions.RunningtimeException;
-import com.github.koushikr.exceptions.StateNotFoundException;
-import com.github.koushikr.services.ActionService;
-import com.github.koushikr.services.StateManagementService;
-import com.github.koushikr.services.TransitionService;
+import com.github.koushikr.fsm.models.entities.*;
+import com.github.koushikr.fsm.models.executors.ErrorAction;
+import com.github.koushikr.fsm.models.executors.EventAction;
+import com.github.koushikr.fsm.exceptions.InvalidStateException;
+import com.github.koushikr.fsm.exceptions.RunningtimeException;
+import com.github.koushikr.fsm.exceptions.StateNotFoundException;
+import com.github.koushikr.fsm.services.ActionService;
+import com.github.koushikr.fsm.services.StateManagementService;
+import com.github.koushikr.fsm.services.TransitionService;
 import com.google.common.collect.Multimap;
 import lombok.extern.slf4j.Slf4j;
 

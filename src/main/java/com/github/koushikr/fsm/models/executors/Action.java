@@ -1,4 +1,4 @@
-package com.github.koushikr.models.executors;
+package com.github.koushikr.fsm.models.executors;
 
 /**
  * Entity by : koushikr.

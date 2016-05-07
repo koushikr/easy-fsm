@@ -1,13 +1,13 @@
-package com.github.koushikr.services;
+package com.github.koushikr.fsm.services;
 
-import com.github.koushikr.models.entities.EventType;
-import com.github.koushikr.models.entities.State;
-import com.github.koushikr.models.entities.Context;
-import com.github.koushikr.models.entities.Event;
-import com.github.koushikr.models.executors.Action;
-import com.github.koushikr.models.executors.EventAction;
-import com.github.koushikr.exceptions.RunningtimeException;
-import com.github.koushikr.corefsm.StateMachine;
+import com.github.koushikr.fsm.models.entities.EventType;
+import com.github.koushikr.fsm.models.entities.State;
+import com.github.koushikr.fsm.models.entities.Context;
+import com.github.koushikr.fsm.models.entities.Event;
+import com.github.koushikr.fsm.models.executors.Action;
+import com.github.koushikr.fsm.models.executors.EventAction;
+import com.github.koushikr.fsm.exceptions.RunningtimeException;
+import com.github.koushikr.fsm.StateMachine;
 
 /**
  * Entity by : koushikr.

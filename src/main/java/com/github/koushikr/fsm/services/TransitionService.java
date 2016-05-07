@@ -1,8 +1,8 @@
-package com.github.koushikr.services;
+package com.github.koushikr.fsm.services;
 
-import com.github.koushikr.models.entities.Event;
-import com.github.koushikr.models.entities.State;
-import com.github.koushikr.models.entities.Transition;
+import com.github.koushikr.fsm.models.entities.Event;
+import com.github.koushikr.fsm.models.entities.State;
+import com.github.koushikr.fsm.models.entities.Transition;
 import com.google.common.collect.Multimap;
 
 import java.util.Optional;

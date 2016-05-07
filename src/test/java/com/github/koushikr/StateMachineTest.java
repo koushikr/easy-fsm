@@ -1,10 +1,10 @@
 package com.github.koushikr;
 
-import com.github.koushikr.models.executors.EventAction;
-import com.github.koushikr.models.entities.Context;
-import com.github.koushikr.exceptions.InvalidStateException;
-import com.github.koushikr.exceptions.StateNotFoundException;
-import com.github.koushikr.corefsm.StateMachine;
+import com.github.koushikr.fsm.models.executors.EventAction;
+import com.github.koushikr.fsm.models.entities.Context;
+import com.github.koushikr.fsm.exceptions.InvalidStateException;
+import com.github.koushikr.fsm.exceptions.StateNotFoundException;
+import com.github.koushikr.fsm.StateMachine;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
