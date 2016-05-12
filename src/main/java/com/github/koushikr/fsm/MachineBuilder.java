@@ -2,6 +2,8 @@ package com.github.koushikr.fsm;
 
 import com.github.koushikr.fsm.models.entities.State;
 import com.github.koushikr.fsm.models.entities.Transition;
+import com.github.koushikr.fsm.models.executors.ErrorAction;
+import com.github.koushikr.fsm.models.executors.EventAction;
 import com.github.koushikr.fsm.services.ActionService;
 import com.github.koushikr.fsm.services.StateManagementService;
 import com.github.koushikr.fsm.services.impl.ActionServiceImpl;
@@ -35,6 +37,11 @@ public class MachineBuilder<C extends Context> {
 
     public <C extends Context> MachineBuilder<C> onTransition(Event event, Collection<State> fromStates, State to){
         fromStates.stream().forEach(state -> addTransition(event, state, to));
+        return (MachineBuilder<C>) this;
+    }
+
+    public <C extends Context> MachineBuilder<C> onError(ErrorAction<C> eventAction) throws Exception {
+        stateMachine.addError(eventAction);
         return (MachineBuilder<C>) this;
     }
 

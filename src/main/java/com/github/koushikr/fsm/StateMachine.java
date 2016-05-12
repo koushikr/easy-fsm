@@ -63,6 +63,11 @@ public class StateMachine<C extends Context> {
         stateManagementService.addEndStates(endStates);
     }
 
+    public <C extends Context> StateMachine<C> addError(ErrorAction<C> errorHandler) throws Exception{
+        this.actionService.setHandler(EventType.ERROR, null, null, errorHandler);
+        return (StateMachine<C>)  this;
+    }
+
     public <C extends Context> StateMachine<C> beforeTransition(EventAction<C> before) throws Exception{
         actionService.beforeTransition(null, before);
         return (StateMachine<C>)  this;
@@ -127,10 +132,14 @@ public class StateMachine<C extends Context> {
         final State from = context.getFrom();
         final Optional<Transition> transition = getTransition(from, event);
         if(!transition.isPresent()) throw new StateNotFoundException("Invalid Event: " + event + " triggered while in State: " + context.getFrom() + " for " + context);
-        State to = transition.get().getTo();
-        handleTakeOff(event, from, to, context);
-        handleStateTransition(event, from, to, context);
-        handleLanding(event, from, to, context);
+        try{
+            State to = transition.get().getTo();
+            handleTakeOff(event, from, to, context);
+            handleStateTransition(event, from, to, context);
+            handleLanding(event, from, to, context);
+        }catch (Exception e){
+            handleError(new RunningtimeException(from, event, e, e.getMessage(), context));
+        }
     }
 
     /**
