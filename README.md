@@ -3,6 +3,28 @@ A small java state machine which would let you define events, states and their a
 
 [![Travis build status](https://travis-ci.org/koushikr/easy-fsm.svg?branch=master)](https://travis-ci.org/koushikr/easy-fsm)
 
+The repository url for the same
+```
+    <repository>
+        <id>easy-fsm-mvn-repo</id>
+        <url>https://raw.github.com/koushikr/easy-fsm/mvn-repo/</url>
+        <snapshots>
+            <enabled>true</enabled>
+            <updatePolicy>always</updatePolicy>
+        </snapshots>
+    </repository>
+```
+
+You could find the dependency at
+
+```
+    <dependency>
+            <groupId>com.github.koushikr</groupId>
+            <artifactId>easy-fsm</artifactId>
+            <version>0.0.1</version>
+    </dependency>
+```
+
 LICENSE
 -------
 
