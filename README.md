@@ -1,29 +1,37 @@
-# easy-fsm
-A small java state machine which would let you define events, states and their appropriate bindings. 
+# easy-fsm [![Travis build status](https://travis-ci.org/koushikr/easy-fsm.svg?branch=master)](https://travis-ci.org/koushikr/easy-fsm)
 
-[![Travis build status](https://travis-ci.org/koushikr/easy-fsm.svg?branch=master)](https://travis-ci.org/koushikr/easy-fsm)
+A small java state machine which would let you define events, states and their appropriate bindings.
 
-The repository url for the same
+> We are not saying that Evolution can't exist, only that it is guided by His Noodly Appendage.
+>  - by Bobby Henderson, The Gospel of the Flying Spaghetti Monster
+
+### Maven Dependency
+Use the following repository:
+```xml
+<repository>
+    <id>clojars</id>
+    <name>Clojars repository</name>
+    <url>https://clojars.org/repo</url>
+</repository>
 ```
-    <repository>
-        <id>easy-fsm-mvn-repo</id>
-        <url>https://raw.github.com/koushikr/easy-fsm/mvn-repo/</url>
-        <snapshots>
-            <enabled>true</enabled>
-            <updatePolicy>always</updatePolicy>
-        </snapshots>
-    </repository>
+Use the following maven dependency:
+```xml
+<dependency>
+    <groupId>io.github.fsm</groupId>
+    <artifactId>fsm</artifactId>
+    <version>0.0.1</version>
+</dependency>
 ```
 
-You could find the dependency at
+### Build instructions
+  - Clone the source:
 
-```
-    <dependency>
-            <groupId>com.github.koushikr</groupId>
-            <artifactId>easy-fsm</artifactId>
-            <version>0.0.1</version>
-    </dependency>
-```
+        git clone github.com/koushikr/easy-fsm
+
+  - Build
+
+        mvn install
+
 
 LICENSE
 -------
