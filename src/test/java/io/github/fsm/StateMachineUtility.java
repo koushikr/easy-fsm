@@ -1,11 +1,9 @@
 package io.github.fsm;
 
-import io.github.fsm.models.entities.State;
+import com.google.common.collect.Sets;
 import io.github.fsm.models.entities.Context;
 import io.github.fsm.models.entities.Event;
-import io.github.fsm.MachineBuilder;
-import io.github.fsm.StateMachine;
-import com.google.common.collect.Sets;
+import io.github.fsm.models.entities.State;
 
 /**
  * Entity by : koushikr.

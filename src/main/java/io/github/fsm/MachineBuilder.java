@@ -1,14 +1,14 @@
 package io.github.fsm;
 
+import io.github.fsm.models.entities.Context;
+import io.github.fsm.models.entities.Event;
 import io.github.fsm.models.entities.State;
 import io.github.fsm.models.entities.Transition;
 import io.github.fsm.models.executors.ErrorAction;
 import io.github.fsm.services.ActionService;
 import io.github.fsm.services.StateManagementService;
-import io.github.fsm.services.impl.ActionServiceImpl;
-import io.github.fsm.models.entities.Context;
-import io.github.fsm.models.entities.Event;
 import io.github.fsm.services.TransitionService;
+import io.github.fsm.services.impl.ActionServiceImpl;
 import io.github.fsm.services.impl.StateManagementServiceImpl;
 import io.github.fsm.services.impl.TransitionServiceImpl;
 

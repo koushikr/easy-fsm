@@ -1,15 +1,15 @@
 package io.github.fsm;
 
-import io.github.fsm.models.executors.ErrorAction;
-import io.github.fsm.models.executors.EventAction;
+import com.google.common.collect.Multimap;
 import io.github.fsm.exceptions.InvalidStateException;
 import io.github.fsm.exceptions.RunningtimeException;
 import io.github.fsm.exceptions.StateNotFoundException;
+import io.github.fsm.models.entities.*;
+import io.github.fsm.models.executors.ErrorAction;
+import io.github.fsm.models.executors.EventAction;
 import io.github.fsm.services.ActionService;
 import io.github.fsm.services.StateManagementService;
 import io.github.fsm.services.TransitionService;
-import com.google.common.collect.Multimap;
-import io.github.fsm.models.entities.*;
 import lombok.extern.slf4j.Slf4j;
 
 import java.util.Collection;

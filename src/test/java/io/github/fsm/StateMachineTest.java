@@ -1,9 +1,9 @@
 package io.github.fsm;
 
-import io.github.fsm.models.executors.EventAction;
-import io.github.fsm.models.entities.Context;
 import io.github.fsm.exceptions.InvalidStateException;
 import io.github.fsm.exceptions.StateNotFoundException;
+import io.github.fsm.models.entities.Context;
+import io.github.fsm.models.executors.EventAction;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;

@@ -1,9 +1,9 @@
 package io.github.fsm.services;
 
+import com.google.common.collect.Multimap;
 import io.github.fsm.models.entities.Event;
 import io.github.fsm.models.entities.State;
 import io.github.fsm.models.entities.Transition;
-import com.google.common.collect.Multimap;
 
 import java.util.Optional;
 

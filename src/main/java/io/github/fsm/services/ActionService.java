@@ -1,13 +1,13 @@
 package io.github.fsm.services;
 
-import io.github.fsm.models.entities.EventType;
-import io.github.fsm.models.entities.State;
+import io.github.fsm.StateMachine;
+import io.github.fsm.exceptions.RunningtimeException;
 import io.github.fsm.models.entities.Context;
 import io.github.fsm.models.entities.Event;
+import io.github.fsm.models.entities.EventType;
+import io.github.fsm.models.entities.State;
 import io.github.fsm.models.executors.Action;
 import io.github.fsm.models.executors.EventAction;
-import io.github.fsm.exceptions.RunningtimeException;
-import io.github.fsm.StateMachine;
 
 /**
  * Entity by : koushikr.

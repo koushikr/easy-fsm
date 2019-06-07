@@ -1,8 +1,8 @@
 package io.github.fsm.services.impl;
 
+import com.google.common.collect.Sets;
 import io.github.fsm.models.entities.State;
 import io.github.fsm.services.StateManagementService;
-import com.google.common.collect.Sets;
 
 import java.util.Collection;
 import java.util.Set;

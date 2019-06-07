@@ -1,11 +1,11 @@
 package io.github.fsm.services.impl;
 
+import com.google.common.collect.HashMultimap;
+import com.google.common.collect.Multimap;
 import io.github.fsm.models.entities.Event;
 import io.github.fsm.models.entities.State;
 import io.github.fsm.models.entities.Transition;
 import io.github.fsm.services.TransitionService;
-import com.google.common.collect.HashMultimap;
-import com.google.common.collect.Multimap;
 import lombok.AllArgsConstructor;
 
 import java.util.Optional;

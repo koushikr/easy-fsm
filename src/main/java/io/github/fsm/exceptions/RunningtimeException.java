@@ -1,8 +1,8 @@
 package io.github.fsm.exceptions;
 
-import io.github.fsm.models.entities.State;
 import io.github.fsm.models.entities.Context;
 import io.github.fsm.models.entities.Event;
+import io.github.fsm.models.entities.State;
 import lombok.Getter;
 
 /**
