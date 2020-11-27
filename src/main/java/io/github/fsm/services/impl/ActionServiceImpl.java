@@ -118,10 +118,10 @@ public class ActionServiceImpl implements ActionService {
      */
     @Override
     public <C extends Context> void handleTransition(Event event, State from, State to, C context) throws Exception {
-        Action h = handlers.get(new HandlerType(EventType.STATE_TRANSITION, null, to));
+        Action h = handlers.get(new HandlerType(EventType.STATE_TRANSITION, null, from));
         if(!Objects.isNull(h)) ((EventAction<C>) h).call(context);
 
-        h = handlers.get(new HandlerType(EventType.STATE_TRANSITION, event, to));
+        h = handlers.get(new HandlerType(EventType.STATE_TRANSITION, event, from));
         if(!Objects.isNull(h)) ((EventAction<C>) h).call(context);
 
         h = handlers.get(new HandlerType(EventType.ANY_STATE_TRANSITION, null, null));

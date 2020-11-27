@@ -76,4 +76,21 @@ public class StateMachineTest {
         stateMachine.fire(StateMachineUtility.TestEvent.FULFILL, stateContext);
     }
 
+    @Test
+    public void testForTransition() throws Exception{
+        Context stateContext = new Context();
+        stateContext.setFrom(StateMachineUtility.TestState.STARTED);
+        stateContext.setTo(StateMachineUtility.TestState.CREATED);
+        stateContext.setCausedEvent(StateMachineUtility.TestEvent.CREATE);
+        StateMachine<Context> stateMachine = StateMachineUtility.getValidStateMachine();
+        stateMachine.forTransition(StateMachineUtility.TestEvent.CREATE,
+                StateMachineUtility.TestState.STARTED,
+                new EventAction<Context>() {
+            @Override
+            public void call(Context context) throws Exception {
+                Assert.assertTrue(context.getFrom() == StateMachineUtility.TestState.STARTED);
+            }
+        });
+        stateMachine.fire(StateMachineUtility.TestEvent.CREATE, stateContext);
+    }
 }

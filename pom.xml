@@ -63,7 +63,7 @@
     <dependency>
       <groupId>org.projectlombok</groupId>
       <artifactId>lombok</artifactId>
-      <version>1.16.6</version>
+      <version>1.18.16</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
@@ -103,6 +103,7 @@
                 <version>2.18.1</version>
                 <configuration>
                     <argLine>${argLine}</argLine>
+                    <forkCount>0</forkCount>
                 </configuration>
             </plugin>
 
