@@ -19,7 +19,7 @@ Use the following maven dependency:
 <dependency>
     <groupId>io.github.fsm</groupId>
     <artifactId>fsm</artifactId>
-    <version>0.0.1</version>
+    <version>0.0.2-1</version>
 </dependency>
 ```
 
