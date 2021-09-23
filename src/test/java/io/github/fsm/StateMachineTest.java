@@ -19,7 +19,6 @@ import io.github.fsm.exceptions.InvalidStateException;
 import io.github.fsm.exceptions.StateNotFoundException;
 import io.github.fsm.models.entities.Context;
 import org.junit.Assert;
-import org.junit.BeforeClass;
 import org.junit.Test;
 
 /**

@@ -14,12 +14,21 @@ Use the following repository:
     <url>https://clojars.org/repo</url>
 </repository>
 ```
-Use the following maven dependency:
+Use the following maven dependency for java8: (Shall be deprecated henceforth!)
 ```xml
 <dependency>
     <groupId>io.github.fsm</groupId>
     <artifactId>fsm</artifactId>
     <version>0.0.2-1</version>
+</dependency>
+```
+
+Use the following maven dependency for java11:
+```xml
+<dependency>
+    <groupId>io.github.fsm</groupId>
+    <artifactId>fsm</artifactId>
+    <version>1.0.0</version>
 </dependency>
 ```
 
