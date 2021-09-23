@@ -50,7 +50,7 @@ public class MachineBuilder<C extends Context> {
     }
 
     public <C extends Context> MachineBuilder<C> onTransition(Event event, Collection<State> fromStates, State to){
-        fromStates.stream().forEach(state -> addTransition(event, state, to));
+        fromStates.forEach(state -> addTransition(event, state, to));
         return (MachineBuilder<C>) this;
     }
 

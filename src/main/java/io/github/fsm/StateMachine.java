@@ -35,15 +35,6 @@ import java.util.Set;
 /**
  * Entity by : koushikr.
  * on 23/10/15.
- *
- * <p>
- *     This statemachine is inspired from EasyFlow {@rel https://github.com/Beh01der/EasyFlow}
- *     While the models idea is the same (Duh! there is only one way to implement a state machine),
- *     good load of changes have been made to the abstractions and event transitions.
- *
- *     Couldn't use it as it is, because of the volume of changes(constructs and abstractions)
- *     required for my usage
- * </p>
  */
 @Slf4j
 public class StateMachine<C extends Context> {
@@ -172,9 +163,9 @@ public class StateMachine<C extends Context> {
 
         Set<State> allStates = stateManagementService.getReferenceStates();
         Multimap<State, Transition> map = transitionService.getTransitionDetails();
-        map.keySet().stream().forEach(state -> {
+        map.keySet().forEach(state -> {
             allStates.add(state);
-            map.get(state).stream().forEach(transition -> {
+            map.get(state).forEach(transition -> {
                 allStates.add(transition.getFrom());
                 allStates.add(transition.getTo());
             });
