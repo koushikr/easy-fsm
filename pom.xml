@@ -34,7 +34,7 @@
     <properties>
         <jackson.version>2.9.9</jackson.version>
         <lombok.version>1.18.2</lombok.version>
-        <guava.version>30.1.1-jre</guava.version>
+        <guava.version>32.0.0-jre</guava.version>
         <sl4j.version>1.7.32</sl4j.version>
     </properties>
 
