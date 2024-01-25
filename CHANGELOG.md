@@ -1,3 +1,6 @@
+### Version 1.0.1
+
+- fixed issue in StateMachine.validate
 ### Version 1.0.0
 
 - To java 11
