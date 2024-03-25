@@ -38,11 +38,19 @@ public class StateMachineUtility {
         return constructStateMachine();
     }
 
-    public static StateMachine<Context> getInvalidStateMachine(){
+    public static StateMachine<Context> getNonEndStateEmptyTransitionInvalidStateMachine(){
         return MachineBuilder.start(TestState.STARTED)
                 .onTransition(TestEvent.CREATE, TestState.STARTED, TestState.CREATED)
                 .onTransition(TestEvent.COMPLETED, TestState.IN_PROGRESS, TestState.COMPLETED)
                 .onTransition(TestEvent.CANCEL, Sets.newHashSet(TestState.STARTED, TestState.IN_PROGRESS), TestState.CANCELLED)
+                .end(Sets.newHashSet(TestState.COMPLETED, TestState.CANCELLED));
+    }
+
+    public static StateMachine<Context> getEndStateTransitionsInvalidStateMachine(){
+        return MachineBuilder.start(TestState.STARTED)
+                .onTransition(TestEvent.CREATE, TestState.STARTED, TestState.CREATED)
+                .onTransition(TestEvent.COMPLETED, TestState.IN_PROGRESS, TestState.COMPLETED)
+                .onTransition(TestEvent.CANCEL, Sets.newHashSet(TestState.STARTED, TestState.IN_PROGRESS, TestState.CREATED, TestState.COMPLETED), TestState.CANCELLED)
                 .end(Sets.newHashSet(TestState.COMPLETED, TestState.CANCELLED));
     }
 
