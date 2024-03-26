@@ -178,12 +178,9 @@ public class StateMachine<C extends Context> {
                     throw new InvalidStateException("state :"+ state +" is not an end state but"
                             + " has no outgoing transitions");
                 }
-                if(stateManagementService.getEndStates().contains(state)){
-                    if(!transitions.isEmpty()){
-                        throw new InvalidStateException("state :"+ state +" is an end state"
-                                + " and cannot have any out going transition");
-                    }
-                }
+            } else if(stateManagementService.getEndStates().contains(state)){
+                    throw new InvalidStateException("state :"+ state +" is an end state"
+                            + " and cannot have any out going transition");
             }
         }
     }
